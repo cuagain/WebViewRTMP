@@ -405,6 +405,7 @@
 				D3BAE9BD19FA4F5700C9E426 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3BAE9BE19FA4F5700C9E426 /* Build configuration list for PBXNativeTarget "WebViewRTMPTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +414,7 @@
 				D3BAE9C019FA4F5700C9E426 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

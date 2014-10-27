@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,52 +16,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HNo-e0-Wgl">
-                                <rect key="frame" x="0.0" y="74" width="600" height="452"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cex-K8-O1a">
+                                <rect key="frame" x="0.0" y="20" width="600" height="300"/>
                                 <color key="backgroundColor" red="0.23368443750000001" green="0.57864809110000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="321" id="MBW-9l-Qsu"/>
-                                    <constraint firstAttribute="width" constant="352" id="Udp-tW-N4j"/>
+                                    <constraint firstAttribute="height" constant="300" id="spP-fG-kvy"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="MBW-9l-Qsu"/>
-                                        <exclude reference="Udp-tW-N4j"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="MBW-9l-Qsu"/>
-                                        <include reference="Udp-tW-N4j"/>
-                                    </mask>
-                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="HNo-e0-Wgl" secondAttribute="centerX" id="8I1-87-MB7"/>
-                            <constraint firstAttribute="centerY" secondItem="HNo-e0-Wgl" secondAttribute="centerY" constant="0.5" id="YfK-fT-yln"/>
+                            <constraint firstItem="Cex-K8-O1a" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="31b-Tn-WUf"/>
+                            <constraint firstItem="Cex-K8-O1a" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="DkH-mc-wDd"/>
+                            <constraint firstAttribute="trailing" secondItem="Cex-K8-O1a" secondAttribute="trailing" id="ME3-61-afj"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="8I1-87-MB7"/>
-                                <exclude reference="YfK-fT-yln"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="constraints">
-                                <include reference="8I1-87-MB7"/>
-                                <include reference="YfK-fT-yln"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
-                        <outlet property="_view" destination="HNo-e0-Wgl" id="0Fg-JE-7Lk"/>
+                        <outlet property="_view" destination="Cex-K8-O1a" id="FJ7-0J-NsS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="135.75"/>
+            <point key="canvasLocation" x="138" y="137"/>
         </scene>
     </scenes>
 </document>

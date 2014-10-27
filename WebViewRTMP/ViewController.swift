@@ -26,15 +26,24 @@ class ViewController: UIViewController {
         //let urlRequest = NSURLRequest(URL: url)
         
         moviePlayer = MPMoviePlayerController(contentURL: url)
-        moviePlayer.view.frame = CGRectMake(0, 0, 340, 250)
+        //moviePlayer.view.frame = CGRectMake(0, 0, 340, 250)
+        
         
         self._view.addSubview(moviePlayer.view)
+        
+        let vs = ["mv" : moviePlayer.view]
+        
+        moviePlayer.view.setTranslatesAutoresizingMaskIntoConstraints(false)
+        self._view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[mv]|", options: NSLayoutFormatOptions(0), metrics: nil, views: vs))
+        self._view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[mv]|", options: NSLayoutFormatOptions(0), metrics: nil, views: vs))
         
         moviePlayer.fullscreen = true
         
         moviePlayer.controlStyle = MPMovieControlStyle.Embedded
         
         //_video.loadRequest(urlRequest)
+        
+        println(self._view.frame)
         
     }
 
